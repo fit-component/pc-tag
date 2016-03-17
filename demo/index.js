@@ -1,3 +1,2 @@
 // @demo
-// basic:24
-// handle:24
+// basic:12 handle:12

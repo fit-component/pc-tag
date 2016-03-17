@@ -47,7 +47,7 @@ export default class Tag extends React.Component {
 }
 
 Tag.defaultProps = {
-    closable: true,
+    closable: false,
     onToClose() {
     },
     onClosed() {
