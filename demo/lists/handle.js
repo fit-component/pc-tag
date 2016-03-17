@@ -14,7 +14,8 @@ export default class Demo extends React.Component {
     render() {
         return (
             <div>
-                <Tag onToClose={ this.handleToClose.bind(this) }
+                <Tag closable
+                     onToClose={ this.handleToClose.bind(this) }
                      onClosed={ this.handleClosed.bind(this) }
                      style={{ background:'#2db7f5', color: '#FFFFFF', marginLeft: '10px' }}>标签1</Tag>
             </div>

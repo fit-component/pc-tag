@@ -1,6 +1,5 @@
 import React from 'react'
 import classNames from 'classnames'
-import Animate from 'rc-animate'
 import './index.scss'
 
 export default class Tag extends React.Component {
