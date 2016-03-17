@@ -6,7 +6,9 @@ export default class Demo extends React.Component {
         return (
             <div>
                 <Tag>标签1</Tag>
-                <Tag style={{marginLeft:5}}>标签2</Tag>
+                <Tag style={{ background:'#2db7f5', color: '#FFFFFF', marginLeft: '10px' }}>标签1</Tag>
+                <Tag style={{ background:'#27c24c', color: '#FFFFFF', marginLeft: '10px' }}>标签1</Tag>
+                <Tag style={{ background:'#f50', color: '#FFFFFF', marginLeft: '10px' }}>标签1</Tag>
             </div>
         )
     }

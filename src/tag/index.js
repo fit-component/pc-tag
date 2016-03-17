@@ -1,26 +1,58 @@
 import React from 'react'
 import classNames from 'classnames'
-import Icon from 'fit-icon';
+import Animate from 'rc-animate'
+import './index.scss'
 
 export default class Tag extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            closing: false,
+            closed: false
+        }
+    }
+
+    handleToClose(e) {
+        this.props.onToClose(()=> {
+            this.handleDoClose()
+        })
+    }
+
+    handleDoClose() {
+        this.setState({
+            closed: true
+        }, ()=> {
+            this.props.onClosed();
+        });
     }
 
     render() {
-        const {className, active, ...others} = this.props
+        const { closable, className, children, ...others } = this.props;
+        const close = closable ? <i className="fa fa-close tag-close" onClick={this.handleToClose.bind(this)}/> : '';
         const classes = classNames({
             '_namespace': true,
             [className]: className
         })
-
         return (
-            <div {...others} className={classes}>
-                {this.props.children} <Icon type="cross" />
-            </div>
-        )
+            <span>
+                {this.state.closed ? null : (
+                    <span data-show={!this.state.closed} {...others} className={classes}>
+                        <span className="tag-text">{children}</span>
+                        {close}
+                    </span>
+                )}
+            </span>
+        );
     }
 }
 
-Tag.defaultProps = {}
+Tag.defaultProps = {
+    closable: true,
+    onToClose() {
+    },
+    onClosed() {
+    }
+}
+
+
+export default Tag;

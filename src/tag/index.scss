@@ -1,0 +1,21 @@
+@import "../../../../../style/mixins";
+
+& {
+  position: relative;
+  display: inline-block;
+  line-height: 22px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: #f3f3f3;
+  font-size: 12px;
+  -webkit-transition: all .3s cubic-bezier(.78, .14, .15, .86);
+  transition: all .3s cubic-bezier(.78, .14, .15, .86);
+  overflow: hidden;
+  vertical-align: middle;
+  opacity: .8;
+  .tag-close {
+    margin-left: 3px;
+    cursor: pointer;
+  }
+}
