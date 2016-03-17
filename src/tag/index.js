@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import Icon from 'fit-icon';
 
 export default class Tag extends React.Component {
     constructor(props) {
@@ -16,12 +17,10 @@ export default class Tag extends React.Component {
 
         return (
             <div {...others} className={classes}>
-                {this.props.children}
+                {this.props.children} <Icon type="cross" />
             </div>
         )
     }
 }
 
-Tag.defaultProps = {
-
-}
+Tag.defaultProps = {}
