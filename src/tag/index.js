@@ -11,10 +11,8 @@ export default class Tag extends React.Component {
         }
     }
 
-    handleToClose(e) {
-        this.props.onToClose(()=> {
-            this.handleDoClose()
-        })
+    handleBeforeClose() {
+        this.props.beforeClose(()=>{ this.handleDoClose() }) ? this.handleDoClose() : null
     }
 
     handleDoClose() {
@@ -27,7 +25,7 @@ export default class Tag extends React.Component {
 
     render() {
         const { closable, className, children, ...others } = this.props;
-        const close = closable ? <i className="fa fa-close tag-close" onClick={this.handleToClose.bind(this)}/> : '';
+        const close = closable ? <i className="fa fa-close tag-close" onClick={this.handleBeforeClose.bind(this)}/> : '';
         const classes = classNames({
             '_namespace': true,
             [className]: className
@@ -46,9 +44,15 @@ export default class Tag extends React.Component {
 }
 
 Tag.defaultProps = {
+    // @desc 是否可关闭
     closable: false,
-    onToClose() {
+
+    // @desc 关闭前回调
+    beforeClose() {
+        return true
     },
+
+    // @desc 关闭后回调
     onClosed() {
     }
 }
