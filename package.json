@@ -1,0 +1,16 @@
+{
+  "name": "fit-tag",
+  "version": "1.0.0",
+  "description": "标签",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.baidu.com/tb-component/pc-tag.git"
+  },
+  "author": "huangziyi01",
+  "license": "ISC",
+  "dependencies": {}
+}
