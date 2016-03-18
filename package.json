@@ -1,6 +1,6 @@
 {
   "name": "fit-tag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "标签",
   "main": "lib/index.js",
   "scripts": {
@@ -13,8 +13,7 @@
   "author": "huangziyi01",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.2.3",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react": "^0.14.7",
+    "classnames": "^2.2.1"
   }
 }
