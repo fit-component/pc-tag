@@ -56,6 +56,3 @@ Tag.defaultProps = {
     onClosed() {
     }
 }
-
-
-export default Tag;
