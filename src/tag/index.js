@@ -19,13 +19,13 @@ export default class Tag extends React.Component {
         this.setState({
             closed: true
         }, ()=> {
-            this.props.onClosed();
-        });
+            this.props.onClosed()
+        })
     }
 
     render() {
-        const { closable, className, children, ...others } = this.props;
-        const close = closable ? <i className="fa fa-close tag-close" onClick={this.handleBeforeClose.bind(this)}/> : '';
+        const { closable, className, children, ...others } = this.props
+        const close = closable ? <i className="fa fa-close tag-close" onClick={this.handleBeforeClose.bind(this)}/> : ''
         const classes = classNames({
             '_namespace': true,
             [className]: className
@@ -39,7 +39,7 @@ export default class Tag extends React.Component {
                     </span>
                 )}
             </span>
-        );
+        )
     }
 }
 
