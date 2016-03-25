@@ -1,6 +1,6 @@
 {
   "name": "fit-tag",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "标签",
   "main": "lib/index.js",
   "scripts": {
