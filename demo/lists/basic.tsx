@@ -1,7 +1,7 @@
-import React from 'react'
-import Tag from 'fit-tag'
+import * as React from 'react'
+import Tag from '../../src'
 
-export default class Demo extends React.Component {
+export default class Demo extends React.Component<any,any> {
     render() {
         return (
             <div>

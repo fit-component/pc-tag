@@ -1,9 +1,9 @@
-import React from 'react'
-import Tag from 'fit-tag'
+import * as React from 'react'
+import Tag from '../../src'
 
-export default class Demo extends React.Component {
+export default class Demo extends React.Component<any,any> {
 
-    handleBeforeClose(close) {
+    handleBeforeClose(close:any) {
         setTimeout(function () {
             close()
         }, 1000)

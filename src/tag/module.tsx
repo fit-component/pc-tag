@@ -2,17 +2,17 @@ export interface PropsInterface {
     /**
      * 是否可关闭
      */
-    closable:boolean
+    closable?:boolean
 
     /**
      * 关闭前回调
      */
-    beforeClose(close:Function):boolean
+    beforeClose?:Function
 
     /**
      * 关闭后回调
      */
-    onClosed():void
+    onClosed?:Function
 
     [x:string]:any
 }
@@ -20,7 +20,7 @@ export interface PropsInterface {
 export class Props implements PropsInterface {
     closable = false
 
-    beforeClose(close) {
+    beforeClose(close:Function) {
         return true
     }
 
