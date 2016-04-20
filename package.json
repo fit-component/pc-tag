@@ -1,6 +1,6 @@
 {
   "name": "fit-tag",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "标签",
   "main": "lib/index.js",
   "scripts": {
@@ -15,6 +15,6 @@
   "dependencies": {
     "react": "^15.0.1",
     "classnames": "^2.2.3",
-    "fit-transmit-transparently": "^3.0.7"
+    "fit-transmit-transparently": "^3.0.8"
   }
 }
