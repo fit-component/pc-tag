@@ -1,6 +1,6 @@
 {
   "name": "fit-tag",
-  "version": "3.1.18",
+  "version": "3.1.19",
   "description": "标签",
   "main": "lib/index.js",
   "scripts": {
@@ -12,6 +12,10 @@
   },
   "author": "huangziyi01",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.1.0",
+    "classnames": "^2.2.3",
+    "fit-transmit-transparently": "^3.1.18"
+  },
   "typings": "lib/index.d.ts"
 }
