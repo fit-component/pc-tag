@@ -2,35 +2,35 @@ export interface PropsInterface {
     /**
      * 是否可关闭
      */
-    closable?:boolean
+    closable?: boolean
 
     /**
      * 关闭前回调
      */
-    beforeClose?:Function
+    beforeClose?: Function
 
     /**
      * 关闭后回调
      */
-    onClosed?:Function
+    onClosed?: Function
 
-    [x:string]:any
+    [x: string]: any
 }
 
 export class Props implements PropsInterface {
     closable = false
 
-    beforeClose(close:Function) {
+    beforeClose = (close: Function) => {
         return true
     }
 
-    onClosed() {
+    onClosed = () => {
     }
 }
 
 export interface StateInterface {
-    closing?:boolean
-    closed?:boolean
+    closing?: boolean
+    closed?: boolean
 }
 
 export class State implements StateInterface {
