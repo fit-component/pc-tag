@@ -6,11 +6,11 @@ import './index.scss'
 
 export default class Tag extends React.Component<module.PropsInterface,module.StateInterface> {
     static defaultProps = new module.Props()
-    public state = new module.State()
     props:module.PropsInterface
 
     constructor(props:any) {
         super(props)
+        this.state = new module.State()
     }
 
     handleBeforeClose() {
